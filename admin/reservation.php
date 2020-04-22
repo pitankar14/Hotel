@@ -6,7 +6,7 @@ include('db.php')
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RESERVATION SUNRISE HOTEL</title>
+    <title>RESERVATION MUFASA HOTEL</title>
 	<!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FontAwesome Styles-->
@@ -25,13 +25,13 @@ include('db.php')
                     <li>
                         <a  href="../index.php"><i class="fa fa-home"></i> Homepage</a>
                     </li>
-                    
+
 					</ul>
 
             </div>
 
         </nav>
-       
+
         <div id="page-wrapper" >
             <div id="page-inner">
 			 <div class="row">
@@ -40,11 +40,11 @@ include('db.php')
                             RESERVATION <small></small>
                         </h1>
                     </div>
-                </div> 
-                 
-                                 
+                </div>
+
+
             <div class="row">
-                
+
                 <div class="col-md-5 col-sm-5">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
@@ -68,17 +68,17 @@ include('db.php')
 							  <div class="form-group">
                                             <label>First Name</label>
                                             <input name="fname" class="form-control" required>
-                                            
+
                                </div>
 							   <div class="form-group">
                                             <label>Last Name</label>
                                             <input name="lname" class="form-control" required>
-                                            
+
                                </div>
 							   <div class="form-group">
                                             <label>Email</label>
                                             <input name="email" type="email" class="form-control" required>
-                                            
+
                                </div>
 							   <div class="form-group">
                                             <label>Nationality*</label>
@@ -86,9 +86,9 @@ include('db.php')
                                                 <input type="radio" name="nation"  value="Sri Lankan" checked="">Sri Lankan
                                             </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="nation"  value="Non Sri Lankan ">Non Sri Lankan 
+                                                <input type="radio" name="nation"  value="Non Sri Lankan ">Non Sri Lankan
                                             </label>
-                         
+
                                 </div>
 								<?php
 
@@ -109,15 +109,15 @@ include('db.php')
 								<div class="form-group">
                                             <label>Phone Number</label>
                                             <input name="phone" type ="text" class="form-control" required>
-                                            
+
                                </div>
-							   
+
                         </div>
-                        
+
                     </div>
                 </div>
-                
-                  
+
+
             <div class="row">
                 <div class="col-md-6 col-sm-6">
                     <div class="panel panel-primary">
@@ -144,8 +144,8 @@ include('db.php')
 												<option value="Triple">Triple</option>
                                                 <option value="Quad">Quad</option>
 												<option value="None">None</option>
-                                                
-                                             
+
+
                                             </select>
                               </div>
 							  <div class="form-group">
@@ -161,8 +161,8 @@ include('db.php')
 												<option value="7">7</option> -->
                                             </select>
                               </div>
-							 
-							 
+
+
 							  <div class="form-group">
                                             <label>Meal Plan</label>
                                             <select name="meal" class="form-control"required>
@@ -171,27 +171,27 @@ include('db.php')
                                                 <option value="Breakfast">Breakfast</option>
 												<option value="Half Board">Half Board</option>
 												<option value="Full Board">Full Board</option>
-												
-                                                
-                                             
+
+
+
                                             </select>
                               </div>
 							  <div class="form-group">
                                             <label>Check-In</label>
                                             <input name="cin" type ="date" class="form-control">
-                                            
+
                                </div>
 							   <div class="form-group">
                                             <label>Check-Out</label>
                                             <input name="cout" type ="date" class="form-control">
-                                            
+
                                </div>
                        </div>
-                        
+
                     </div>
                 </div>
-				
-				
+
+
                 <div class="col-md-12 col-sm-12">
                     <div class="well">
                         <h4>HUMAN VERIFICATION</h4>
@@ -204,21 +204,21 @@ include('db.php')
 							if(isset($_POST['submit']))
 							{
 							$code1=$_POST['code1'];
-							$code=$_POST['code']; 
+							$code=$_POST['code'];
 							if($code1!="$code")
 							{
-							$msg="Invalide code"; 
+							$msg="Invalide code";
 							}
 							else
 							{
-							
+
 									$con=mysqli_connect("localhost","root","","hotel");
 									$check="SELECT * FROM roombook WHERE email = '$_POST[email]'";
 									$rs = mysqli_query($con,$check);
 									$data = mysqli_fetch_array($rs, MYSQLI_NUM);
 									if($data[0] > 1) {
 										echo "<script type='text/javascript'> alert('User Already in Exists')</script>";
-										
+
 									}
 
 									else
@@ -228,12 +228,12 @@ include('db.php')
 										if (mysqli_query($con,$newUser))
 										{
 											echo "<script type='text/javascript'> alert('Your Booking application has been sent')</script>";
-											
+
 										}
 										else
 										{
 											echo "<script type='text/javascript'> alert('Error adding user in database')</script>";
-											
+
 										}
 									}
 
@@ -242,16 +242,16 @@ include('db.php')
 							}
 							?>
 						</form>
-							
+
                     </div>
                 </div>
             </div>
-           
-                
+
+
                 </div>
-                    
-            
-				
+
+
+
 					</div>
 			 <!-- /. PAGE INNER  -->
             </div>
@@ -267,7 +267,7 @@ include('db.php')
     <script src="assets/js/jquery.metisMenu.js"></script>
       <!-- Custom Js -->
     <script src="assets/js/custom-scripts.js"></script>
-    
-   
+
+
 </body>
 </html>

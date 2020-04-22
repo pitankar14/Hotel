@@ -1,11 +1,11 @@
-<?php  
-session_start();  
+<?php
+session_start();
 if(!isset($_SESSION["user"]))
 {
  header("location:index.php");
 }
 ob_start();
-?> 
+?>
 
 <?php
 include('db.php');
@@ -13,13 +13,13 @@ $rsql ="select id from room";
 $rre=mysqli_query($con,$rsql);
 
 ?>
-							 
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SUNRISE HOTEL</title>
+    <title>MUFASA HOTEL</title>
 	<!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FontAwesome Styles-->
@@ -43,7 +43,7 @@ $rre=mysqli_query($con,$rsql);
             </div>
 
             <ul class="nav navbar-top-links navbar-right">
-			
+
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
@@ -57,7 +57,7 @@ $rre=mysqli_query($con,$rsql);
                         <li><a href="logout.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
-					
+
                     <!-- /.dropdown-user -->
                 </li>
                 <!-- /.dropdown -->
@@ -77,16 +77,16 @@ $rre=mysqli_query($con,$rsql);
                     <li>
                         <a  class="active-menu" href="roomdel.php"><i class="fa fa-pencil-square-o"></i> Delete Room</a>
                     </li>
-					
 
-                    
+
+
             </div>
 
         </nav>
         <!-- /. NAV SIDE  -->
-       
-        
-       
+
+
+
         <div id="page-wrapper" >
             <div id="page-inner">
 			 <div class="row">
@@ -95,11 +95,11 @@ $rre=mysqli_query($con,$rsql);
                            DELETE ROOM <small></small>
                         </h1>
                     </div>
-                </div> 
-                 
-                                 
+                </div>
+
+
             <div class="row">
-                
+
                 <div class="col-md-12 col-sm-12">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
@@ -116,55 +116,55 @@ $rre=mysqli_query($con,$rsql);
 												{
 												$value = $rrow['id'];
 												 echo '<option value="'.$value.'">'.$value.'</option>';
-												
+
 												}
 												?>
-                                                
+
                                             </select>
                               </div>
-							  
-								
-							 <input type="submit" name="del" value="Delete Room" class="btn btn-primary"> 
+
+
+							 <input type="submit" name="del" value="Delete Room" class="btn btn-primary">
 							</form>
 							<?php
 							 include('db.php');
-							 
+
 							 if(isset($_POST['del']))
 							 {
 								$did = $_POST['id'];
-								
-								
+
+
 								$sql ="DELETE FROM `room` WHERE id = '$did'" ;
 								if(mysqli_query($con,$sql))
 								{
 								 echo '<script type="text/javascript">alert("Delete the Room") </script>' ;
-										
+
 										header("Location: roomdel.php");
 								}else {
 									echo '<script>alert("Sorry ! Check The System") </script>' ;
 								}
 							 }
-							
+
 							?>
                         </div>
-                        
+
                     </div>
                 </div>
-                
-                  
+
+
            <?php
 						include ('db.php');
 						$sql = "select * from room";
 						$re = mysqli_query($con,$sql)
 				?>
                 <div class="row">
-				
-				
+
+
 				<?php
 										while($row= mysqli_fetch_array($re))
 										{
 												$id = $row['type'];
-											if($id == "Superior Room") 
+											if($id == "Superior Room")
 											{
 												echo"<div class='col-md-3 col-sm-12 col-xs-12'>
 													<div class='panel panel-primary text-center no-boder bg-color-blue'>
@@ -193,7 +193,7 @@ $rre=mysqli_query($con,$rsql);
 														</div>
 													</div>
 												</div>";
-											
+
 											}
 											else if($id =="Guest House")
 											{
@@ -209,7 +209,7 @@ $rre=mysqli_query($con,$rsql);
 														</div>
 													</div>
 												</div>";
-											
+
 											}
 											else if($id =="Single Room")
 											{
@@ -225,19 +225,19 @@ $rre=mysqli_query($con,$rsql);
 														</div>
 													</div>
 												</div>";
-											
+
 											}
 										}
 									?>
-                    
+
                 </div>
             <?php
-				
+
 			ob_end_flush();
 			?>
-                    
-            
-				
+
+
+
 					</div>
 			 <!-- /. PAGE INNER  -->
             </div>
@@ -253,7 +253,7 @@ $rre=mysqli_query($con,$rsql);
     <script src="assets/js/jquery.metisMenu.js"></script>
       <!-- Custom Js -->
     <script src="assets/js/custom-scripts.js"></script>
-    
-   
+
+
 </body>
 </html>

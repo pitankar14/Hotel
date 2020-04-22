@@ -1,18 +1,18 @@
-<?php  
-session_start();  
+<?php
+session_start();
 if(!isset($_SESSION["user"]))
 {
  header("location:index.php");
 }
 
 ob_start();
-?> 
+?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SUNRISE HOTEL</title>
+    <title>MUFASA HOTEL</title>
 	<!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FontAwesome Styles-->
@@ -37,7 +37,7 @@ ob_start();
             </div>
 
             <ul class="nav navbar-top-links navbar-right">
-			
+
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
@@ -51,7 +51,7 @@ ob_start();
                         <li><a href="logout.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
-					
+
                     <!-- /.dropdown-user -->
                 </li>
                 <!-- /.dropdown -->
@@ -65,15 +65,15 @@ ob_start();
                     <li>
                         <a class="active-menu" href="settings.php"><i class="fa fa-dashboard"></i>User Dashboard</a>
                     </li>
-					
-					
 
-                    
+
+
+
             </div>
 
         </nav>
         <!-- /. NAV SIDE  -->
-       
+
         <div id="page-wrapper" >
             <div id="page-inner">
 			 <div class="row">
@@ -82,15 +82,15 @@ ob_start();
                            ADMINISTRATOR<small> accounts </small>
                         </h1>
                     </div>
-                </div> 
-                 
-                                 
+                </div>
+
+
             <?php
 						include ('db.php');
 						$sql = "SELECT * FROM `login`";
 						$re = mysqli_query($con,$sql)
 				?>
-                
+
             <div class="row">
                 <div class="col-md-12">
                     <!-- Advanced Tables -->
@@ -103,18 +103,18 @@ ob_start();
                                             <th>User ID</th>
 											<th>User name</th>
                                             <th>Password</th>
-                                            
+
 											<th>Update</th>
 											<th>Remove</th>
-                                            
+
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        
+
 									<?php
 										while($row = mysqli_fetch_array($re))
 										{
-										
+
 											$id = $row['id'];
 											$us = $row['usname'];
 											$ps = $row['pass'];
@@ -124,9 +124,9 @@ ob_start();
 													<td>".$id."</td>
 													<td>".$us."</td>
 													<td>".$ps."</td>
-													
+
 													<td><button class='btn btn-primary btn' data-toggle='modal' data-target='#myModal'>
-															 Update 
+															 Update
 													</button></td>
 													<td><a href=usersettingdel.php?eid=".$id ." <button class='btn btn-danger'> <i class='fa fa-edit' ></i> Delete</button></td>
 												</tr>";
@@ -137,23 +137,23 @@ ob_start();
 													<td>".$id."</td>
 													<td>".$us."</td>
 													<td>".$ps."</td>
-													
+
 													<td><button class='btn btn-primary btn' data-toggle='modal' data-target='#myModal'>
-                              Update 
+                              Update
                             </button></td>
 													<td><a href=usersettingdel.php?eid=".$id ." <button class='btn btn-danger'> <i class='fa fa-edit' ></i> Delete</button></td>
 												</tr>";
-											
+
 											}
-										
+
 										}
-										
+
 									?>
-                                        
+
                                     </tbody>
                                 </table>
                             </div>
-                            
+
                         </div>
                     </div>
                     <!--End Advanced Tables -->
@@ -181,13 +181,13 @@ ob_start();
                                             <input name="newps"  class="form-control" placeholder="Enter Password">
 											</div>
                                         </div>
-										
+
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-											
+
                                            <input type="submit" name="in" value="Add" class="btn btn-primary">
 										  </form>
-										   
+
                                         </div>
                                     </div>
                                 </div>
@@ -198,20 +198,20 @@ ob_start();
 						{
 							$newus = $_POST['newus'];
 							$newps = $_POST['newps'];
-							
+
 							$newsql ="Insert into login (usname,pass) values ('$newus','$newps')";
 							if(mysqli_query($con,$newsql))
 							{
 							echo' <script language="javascript" type="text/javascript"> alert("User name and password Added") </script>';
-							
-						
+
+
 							}
 						header("Location: usersetting.php");
 						}
 						?>
-						
+
 					<div class="panel-body">
-                            
+
                             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
@@ -232,13 +232,13 @@ ob_start();
                                             <input name="pasd" value="<?php echo $ps; ?>" class="form-control" placeholder="Enter Password">
 											</div>
                                         </div>
-										
+
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-											
+
                                            <input type="submit" name="up" value="Update" class="btn btn-primary">
 										  </form>
-										   
+
                                         </div>
                                     </div>
                                 </div>
@@ -246,34 +246,34 @@ ob_start();
                         </div>
                 </div>
             </div>
-               
+
                 <!-- /. ROW  -->
-                <?php 
+                <?php
 				if(isset($_POST['up']))
 				{
 					$usname = $_POST['usname'];
 					$passwr = $_POST['pasd'];
-					
+
 					$upsql = "UPDATE `login` SET `usname`='$usname',`pass`='$passwr' WHERE id = '$id'";
 					if(mysqli_query($con,$upsql))
 					{
 					echo' <script language="javascript" type="text/javascript"> alert("User name and password update") </script>';
-					
-				
+
+
 					}
-				
+
 				header("Location: usersetting.php");
-				
+
 				}
 				ob_end_flush();
-				
-				
-				
-				
+
+
+
+
 				?>
-                                
-                  
-            
+
+
+
 			 <!-- /. PAGE INNER  -->
             </div>
          <!-- /. PAGE WRAPPER  -->
@@ -288,7 +288,7 @@ ob_start();
     <script src="assets/js/jquery.metisMenu.js"></script>
       <!-- Custom Js -->
     <script src="assets/js/custom-scripts.js"></script>
-    
-   
+
+
 </body>
 </html>

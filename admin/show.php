@@ -2,7 +2,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Details of Book key</title>
-		
+
 		<style>
 		/* reset */
 
@@ -113,7 +113,7 @@ aside h1 { border-color: #999; border-bottom-style: solid; }
 	border-width: 1px;
 	display: block;
 	font-size: .8rem;
-	padding: 0.25em 0.5em;	
+	padding: 0.25em 0.5em;
 	float: left;
 	text-align: center;
 	width: 0.6em;
@@ -152,21 +152,21 @@ tr:hover .cut { opacity: 1; }
 
 @page { margin: 0; }
 		</style>
-		
+
 	</head>
 	<body>
-	
-	
-	
-	
+
+
+
+
 	<?php
-	ob_start();	
+	ob_start();
 	include ('db.php');
 
 	$pid = $_GET['sid'];
-	
-	
-	
+
+
+
 	$sql ="select * from roombook where id = '$pid' ";
 	$re = mysqli_query($con,$sql);
 	while($row=mysqli_fetch_array($re))
@@ -186,15 +186,15 @@ tr:hover .cut { opacity: 1; }
 		$cin_date = $row['cin'];
 		$cout_date = $row['cout'];
 		$nodays = $row['nodays'];
-	
+
 	}
-	
-									
+
+
 	?>
 		<header>
 			<h1>Information of Guest</h1>
 			<address >
-				<p>SUN RISE HOTEL,</p>
+				<p>MU FASA HOTEL,</p>
 				<p>New Kalmunani Road,<br>Battialoa,<br>Sri Lanka.</p>
 				<p>(+94) 65 222 44 55</p>
 			</address>
@@ -203,7 +203,7 @@ tr:hover .cut { opacity: 1; }
 		<article>
 			<h1></h1>
 			<address >
-				
+
 				<p><br></p>
 				<p>Coustomer Name  : -  <?php echo $title.$Fname." ".$lname;?><br></p>
 			</address>
@@ -220,15 +220,15 @@ tr:hover .cut { opacity: 1; }
 					<th><span >Check out Date</span></th>
 					<td><span ><?php echo $cout_date; ?> </span></td>
 				</tr>
-				
+
 			</table>
 			<table >
-					<tr> 
+					<tr>
 						<td>Customer phone : -  <?php echo $phone; ?> </td>
-						
+
 						<td>Customer email : -  <?php echo $email; ?> </td>
 					</tr>
-					<tr> 
+					<tr>
 						<td>Customer Country : -  <?php echo $country; ?> </td>
 						<td>Customer National : -  <?php echo $National; ?> </td>
 					</tr>
@@ -240,41 +240,41 @@ tr:hover .cut { opacity: 1; }
 					<tr>
 						<th><span >Item</span></th>
 						<th><span >No of Days</span></th>
-						
+
 					</tr>
 				</thead>
 				<tbody>
-				
+
 					<tr>
 						<td><span ><?php echo $room_type; ?></span></td>
 						<td><span ><?php echo $nodays; ?> </span></td>
-						
+
 					</tr>
 					<tr>
 						<td><span ><?php echo $Bed_type; ?>  Bed </span></td>
 						<td><span ><?php echo $nodays; ?></span></td>
-						
+
 					</tr>
 					<tr>
 						<td><span ><?php echo $meal_type; ?>  </span></td>
 						<td><span ><?php echo $nodays; ?></span></td>
-						
+
 					</tr>
 				</tbody>
 			</table>
-			
-			
+
+
 		</article>
 		<aside>
 			<h1><span >Contact us</span></h1>
 			<div >
-				<p align="center">Email :- info@sunrise.com || Web :- www.sunrise.com || Phone :- +94 65 222 44 55 </p>
+				<p align="center">Email :- info@mufasa.com || Web :- www.mufasa.com || Phone :- +94 65 222 44 55 </p>
 			</div>
 		</aside>
 	</body>
 </html>
 
-<?php 
+<?php
 
 ob_end_flush();
 

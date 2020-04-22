@@ -116,7 +116,7 @@ aside h1 { border-color: #999; border-bottom-style: solid; }
 	border-width: 1px;
 	display: block;
 	font-size: .8rem;
-	padding: 0.25em 0.5em;	
+	padding: 0.25em 0.5em;
 	float: left;
 	text-align: center;
 	width: 0.6em;
@@ -155,21 +155,21 @@ tr:hover .cut { opacity: 1; }
 
 @page { margin: 0; }
 		</style>
-		
+
 	</head>
 	<body>
-	
-	
-	
-	
+
+
+
+
 	<?php
-	ob_start();	
+	ob_start();
 	include ('db.php');
 
 	$pid = $_GET['pid'];
-	
-	
-	
+
+
+
 	$sql ="select * from payment where id = '$pid' ";
 	$re = mysqli_query($con,$sql);
 	while($row=mysqli_fetch_array($re))
@@ -189,17 +189,17 @@ tr:hover .cut { opacity: 1; }
 		$btot = $row['btot'];
 		$fintot = $row['fintot'];
 		$days = $row['noofdays'];
-		
-		
-		
-	
+
+
+
+
 	}
-	
-									$type_of_room = 0;       
+
+									$type_of_room = 0;
 									if($troom=="Superior Room")
 									{
 										$type_of_room = 320;
-									
+
 									}
 									else if($troom=="Deluxe Room")
 									{
@@ -213,7 +213,7 @@ tr:hover .cut { opacity: 1; }
 									{
 										$type_of_room = 150;
 									}
-									
+
 									if($bed=="Single")
 									{
 										$type_of_bed = $type_of_room * 1/100;
@@ -234,7 +234,7 @@ tr:hover .cut { opacity: 1; }
 									{
 										$type_of_bed = $type_of_room * 0/100;
 									}
-									
+
 									if($meal=="Room only")
 									{
 										$type_of_meal=$type_of_bed * 0;
@@ -245,17 +245,17 @@ tr:hover .cut { opacity: 1; }
 									}else if($meal=="Half Board")
 									{
 										$type_of_meal=$type_of_bed * 3;
-									
+
 									}else if($meal=="Full Board")
 									{
 										$type_of_meal=$type_of_bed * 4;
 									}
-	
+
 	?>
 		<header>
 			<h1>Invoice</h1>
 			<address >
-				<p>SUN RISE HOTEL,</p>
+				<p>MU FASA HOTEL,</p>
 				<p>New Kalmunani Road,<br>Battialoa,<br>Sri Lanka.</p>
 				<p>(+94) 65 222 44 55</p>
 			</address>
@@ -275,7 +275,7 @@ tr:hover .cut { opacity: 1; }
 					<th><span >Date</span></th>
 					<td><span ><?php echo $cout; ?> </span></td>
 				</tr>
-				
+
 			</table>
 			<table class="inventory">
 				<thead>
@@ -311,7 +311,7 @@ tr:hover .cut { opacity: 1; }
 					</tr>
 				</tbody>
 			</table>
-			
+
 			<table class="balance">
 				<tr>
 					<th><span >Total</span></th>
@@ -330,7 +330,7 @@ tr:hover .cut { opacity: 1; }
 		<aside>
 			<h1><span >Contact us</span></h1>
 			<div >
-				<p align="center">Email :- info@sunrise.com || Web :- www.sunrise.com || Phone :- +94 65 222 44 55 </p>
+				<p align="center">Email :- info@mufasa.com || Web :- www.mufasa.com || Phone :- +94 65 222 44 55 </p>
 			</div>
 		</aside>
 	</body>
@@ -342,14 +342,14 @@ $rpsql = "UPDATE `room` SET `place`='$free',`cusid`='$nul' where `cusid`='$id'";
 if(mysqli_query($con,$rpsql))
 {
 	$delsql= "DELETE FROM `roombook` WHERE id='$id' ";
-	
+
 	if(mysqli_query($con,$delsql))
 	{
-	
+
 	}
 }
 ?>
-<?php 
+<?php
 
 ob_end_flush();
 
