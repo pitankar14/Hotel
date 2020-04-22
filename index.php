@@ -4,7 +4,7 @@ include('db.php');
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>SUNRISE HOTEL</title>
+<title>MUFASA HOTEL</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -13,7 +13,7 @@ include('db.php');
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href="css/font-awesome.css" rel="stylesheet">
 <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
 <link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
@@ -33,13 +33,13 @@ include('db.php');
 				<ul class="social-icons3">
 								<li><a href="https://www.facebook.com/" class="fa fa-facebook icon-border facebook"> </a></li>
 								<li><a href="https://twitter.com/" class="fa fa-twitter icon-border twitter"> </a></li>
-								<li><a href="https://plus.google.com/u/0/" class="fa fa-google-plus icon-border googleplus"> </a></li> 
+								<li><a href="https://plus.google.com/u/0/" class="fa fa-google-plus icon-border googleplus"> </a></li>
 							</ul>
 			</div>
 			<div class="contact-bnr-w3-agile">
 				<ul>
-					<li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">INFO@SUNRISE.COM</a></li>
-					<li><i class="fa fa-phone" aria-hidden="true"></i>+94 (65)222-44-55</li>	
+					<li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">INFO@MUFASA.COM</a></li>
+					<li><i class="fa fa-phone" aria-hidden="true"></i>+94 (65)222-44-55</li>
 					<li class="s-bar">
 						<div class="search">
 							<input class="search_box" type="checkbox" id="search_box">
@@ -66,7 +66,7 @@ include('db.php');
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<h1><a class="navbar-brand" href="index.php">SUN <span>RISE</span><p class="logo_w3l_agile_caption">Your Dreamy Resort</p></a></h1>
+					<h1><a class="navbar-brand" href="index.php">MU <span>FASA</span><p class="logo_w3l_agile_caption">Your Dreamy Resort</p></a></h1>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
@@ -97,13 +97,13 @@ include('db.php');
 
 							<div class="container">
 								<div class="agileits-banner-info">
-								<h4>SUN RISE</h4>
+								<h4>MU FASA</h4>
 									<h3>We know what you love</h3>
 										<p>Welcome to our hotels</p>
 									<div class="agileits_w3layouts_more menu__item">
 				<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Learn More</a>
 			</div>
-								</div>	
+								</div>
 							</div>
 						</div>
 					</li>
@@ -111,13 +111,13 @@ include('db.php');
 						<div class="w3layouts-banner-top w3layouts-banner-top1">
 							<div class="container">
 								<div class="agileits-banner-info">
-								<h4>SUN RISE</h4>
+								<h4>MU FASA</h4>
 									<h3>Stay with friends & families</h3>
 										<p>Come & enjoy precious moment with us</p>
 									<div class="agileits_w3layouts_more menu__item">
 				<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Learn More</a>
 			</div>
-								</div>	
+								</div>
 							</div>
 						</div>
 					</li>
@@ -125,7 +125,7 @@ include('db.php');
 						<div class="w3layouts-banner-top w3layouts-banner-top2">
 							<div class="container">
 								<div class="agileits-banner-info">
-								<h4>SUN RISE</h4>
+								<h4>MU FASA</h4>
 								<h3>want luxurious vacation?</h3>
 										<p>Get accommodation today</p>
 									<div class="agileits_w3layouts_more menu__item">
@@ -145,8 +145,8 @@ include('db.php');
 					<i class="fa fa-long-arrow-down" aria-hidden="true"></i>
 				</a>
 			</div>
-	</div>	
-	<!-- //banner --> 
+	</div>
+	<!-- //banner -->
 <!--//Header-->
 <!-- //Modal1 -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
@@ -156,7 +156,7 @@ include('db.php');
 								<div class="modal-content">
 									<div class="modal-header">
 										<button type="button" class="close" data-dismiss="modal">&times;</button>
-										<h4>SUN  <span>RISE</span></h4>
+										<h4>MU  <span>FASA</span></h4>
 										<img src="images/1.jpg" alt=" " class="img-responsive">
 										<h5>We know what you love</h5>
 										<p>Providing guests unique and enchanting views from their rooms with its exceptional amenities, makes Star Hotel one of bests in its kind.Try our food menu, awesome services and friendly staff while you are here.</p>
@@ -174,7 +174,7 @@ include('db.php');
 </div>
 <!-- banner-bottom -->
 	<div class="banner-bottom">
-		<div class="container">	
+		<div class="container">
 			<div class="agileits_banner_bottom">
 				<h3><span>Experience a good stay, enjoy fantastic offers</span> Find our friendly welcoming reception</h3>
 			</div>
@@ -184,28 +184,28 @@ include('db.php');
 						<div class="w3_grid_effect">
 							<span class="cbp-ig-icon w3_road"></span>
 							<h4 class="cbp-ig-title">MASTER BEDROOMS</h4>
-							<span class="cbp-ig-category">SUN RISE</span>
+							<span class="cbp-ig-category">MU FASA</span>
 						</div>
 					</li>
 					<li>
 						<div class="w3_grid_effect">
 							<span class="cbp-ig-icon w3_cube"></span>
 							<h4 class="cbp-ig-title">SEA VIEW BALCONY</h4>
-							<span class="cbp-ig-category">SUN RISE</span>
+							<span class="cbp-ig-category">MU FASA</span>
 						</div>
 					</li>
 					<li>
 						<div class="w3_grid_effect">
 							<span class="cbp-ig-icon w3_users"></span>
 							<h4 class="cbp-ig-title">LARGE CAFE</h4>
-							<span class="cbp-ig-category">SUN RISE</span>
+							<span class="cbp-ig-category">MU FASA</span>
 						</div>
 					</li>
 					<li>
 						<div class="w3_grid_effect">
 							<span class="cbp-ig-icon w3_ticket"></span>
 							<h4 class="cbp-ig-title">WIFI COVERAGE</h4>
-							<span class="cbp-ig-category">SUN RISE</span>
+							<span class="cbp-ig-category">MU FASA</span>
 						</div>
 					</li>
 				</ul>
@@ -217,7 +217,7 @@ include('db.php');
  	<div class="about-wthree" id="about">
 		  <div class="container">
 				   <div class="ab-w3l-spa">
-                            <h3 class="title-w3-agileits title-black-wthree">About Our SUN RISE</h3> 
+                            <h3 class="title-w3-agileits title-black-wthree">About Our MU FASA</h3>
 						   <p class="about-para-w3ls">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Sed tempus vestibulum lacus blandit faucibus. Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, at imperdiet urna</p>
 						   <img src="images/about.jpg" class="img-responsive" alt="Hair Salon">
 										<div class="w3l-slider-img">
@@ -245,7 +245,7 @@ include('db.php');
 			 		<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</p>
 					<p><i class="fa fa-check" aria-hidden="true"></i>Decorated room, proper air conditioned</p>
 					<p><i class="fa fa-check" aria-hidden="true"></i>Private balcony</p>
-			 		
+
 			 	</div>
 			 </div>
 			 <div class="col-md-6 advantage-grid right-w3ls wow zoomIn" data-wow-delay="0.3s">
@@ -294,10 +294,10 @@ include('db.php');
 							<ul class="social-icons3">
 								<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
 								<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
-								<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li> 
+								<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li>
 								<li><a href="#" class="fa fa-rss icon-border rss"> </a></li>
 							</ul>
-						</div>							
+						</div>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -307,15 +307,15 @@ include('db.php');
 						<div class="col-md-6 team-Info-agileits">
 							<h4>Sarah Connor</h4>
 							<span>Receptionist</span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.Lorem ipsum dolor .</p>	
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.Lorem ipsum dolor .</p>
 						<div class="social-bnr-agileits footer-icons-agileinfo">
 							<ul class="social-icons3">
 								<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
 								<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
-								<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li> 
+								<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li>
 								<li><a href="#" class="fa fa-rss icon-border rss"> </a></li>
 							</ul>
-						</div>							
+						</div>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -330,10 +330,10 @@ include('db.php');
 							<ul class="social-icons3">
 								<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
 								<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
-								<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li> 
+								<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li>
 								<li><a href="#" class="fa fa-rss icon-border rss"> </a></li>
 							</ul>
-						</div>							
+						</div>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -348,10 +348,10 @@ include('db.php');
 							<ul class="social-icons3">
 								<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
 								<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
-								<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li> 
+								<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li>
 								<li><a href="#" class="fa fa-rss icon-border rss"> </a></li>
 							</ul>
-						</div>							
+						</div>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -366,7 +366,7 @@ include('db.php');
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g1.jpg" class="swipebox"><img src="images/g1.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>SUN RISE</h4>
+						<h4>MU FASA</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
@@ -374,7 +374,7 @@ include('db.php');
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g2.jpg" class="swipebox"><img src="images/g2.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>SUN RISE</h4>
+						<h4>MU FASA</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
@@ -382,7 +382,7 @@ include('db.php');
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g3.jpg" class="swipebox"><img src="images/g3.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>SUN RISE</h4>
+						<h4>MU FASA</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
@@ -390,7 +390,7 @@ include('db.php');
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g4.jpg" class="swipebox"><img src="images/g4.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>SUN RISE</h4>
+						<h4>MU FASA</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
@@ -398,7 +398,7 @@ include('db.php');
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g5.jpg" class="swipebox"><img src="images/g5.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>SUN RISE</h4>
+						<h4>MU FASA</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 					</a>
@@ -406,7 +406,7 @@ include('db.php');
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g6.jpg" class="swipebox"><img src="images/g6.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>SUN RISE</h4>
+						<h4>MU FASA</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 					   </div>
 				   </a>
@@ -414,7 +414,7 @@ include('db.php');
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g6.jpg" class="swipebox"><img src="images/g7.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>SUN RISE</h4>
+						<h4>MU FASA</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 					   </div>
 				   </a>
@@ -422,7 +422,7 @@ include('db.php');
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g6.jpg" class="swipebox"><img src="images/g8.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>SUN RISE</h4>
+						<h4>MU FASA</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 					   </div>
 				   </a>
@@ -430,7 +430,7 @@ include('db.php');
 					<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g9.jpg" class="swipebox"><img src="images/g9.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>SUN RISE</h4>
+						<h4>MU FASA</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
@@ -438,7 +438,7 @@ include('db.php');
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g10.jpg" class="swipebox"><img src="images/g10.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>SUN RISE</h4>
+						<h4>MU FASA</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
@@ -446,7 +446,7 @@ include('db.php');
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g4.jpg" class="swipebox"><img src="images/g4.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>SUN RISE</h4>
+						<h4>MU FASA</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
@@ -454,7 +454,7 @@ include('db.php');
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g2.jpg" class="swipebox"><img src="images/g2.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>SUN RISE</h4>
+						<h4>MU FASA</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
@@ -481,11 +481,11 @@ include('db.php');
 											<li><i class="fa fa-star" aria-hidden="true"></i></li>
 											<li><i class="fa fa-star" aria-hidden="true"></i></li>
 											<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-									
+
 								     </ul>
 							</div>
-							<div class="price-selet">	
-								<h3><span>$</span>320</h3>						
+							<div class="price-selet">
+								<h3><span>$</span>320</h3>
 								<a href="admin/reservation.php" >Book Now</a>
 							</div>
 						</div>
@@ -568,7 +568,7 @@ include('db.php');
   <!-- visitors -->
 	<div class="w3l-visitors-agile" >
 		<div class="container">
-                 <h3 class="title-w3-agileits title-black-wthree">What other visitors experienced</h3> 
+                 <h3 class="title-w3-agileits title-black-wthree">What other visitors experienced</h3>
 		</div>
 		<div class="w3layouts_work_grids">
 			<section class="slider">
@@ -590,8 +590,8 @@ include('db.php');
 								<i class="fa fa-star" aria-hidden="true"></i>
 								Worth to come again
 								</h4>
-								<p>Sed tempus vestibulum lacus blandit faucibus. 
-									Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, 
+								<p>Sed tempus vestibulum lacus blandit faucibus.
+									Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula,
 									at imperdiet urna. </p>
 								<h5>Julia Rose</h5>
 								<p>Germany</p>
@@ -614,8 +614,8 @@ include('db.php');
 								<i class="fa fa-star-o" aria-hidden="true"></i>
 								Worth to come again
 								</h4>
-								<p>Sed tempus vestibulum lacus blandit faucibus. 
-									Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, 
+								<p>Sed tempus vestibulum lacus blandit faucibus.
+									Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula,
 									at imperdiet urna. </p>
 								<h5>Jahnatan Smith</h5>
 								<p>United States</p>
@@ -638,8 +638,8 @@ include('db.php');
 								<i class="fa fa-star-o" aria-hidden="true"></i>
 								Worth to come again
 								</h4>
-								<p>Sed tempus vestibulum lacus blandit faucibus. 
-									Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, 
+								<p>Sed tempus vestibulum lacus blandit faucibus.
+									Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula,
 									at imperdiet urna. </p>
 								<h5>Rosalind Cloer</h5>
 								<p>Italy</p>
@@ -662,8 +662,8 @@ include('db.php');
 								<i class="fa fa-star-o" aria-hidden="true"></i>
 								Worth to come again
 								</h4>
-								<p>Sed tempus vestibulum lacus blandit faucibus. 
-									Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, 
+								<p>Sed tempus vestibulum lacus blandit faucibus.
+									Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula,
 									at imperdiet urna. </p>
 								<h5>Amie Bublitz</h5>
 								<p>Switzerland</p>
@@ -673,7 +673,7 @@ include('db.php');
 					</ul>
 				</div>
 			</section>
-		</div>	
+		</div>
 	</div>
   <!-- visitors -->
 <!-- contact -->
@@ -685,29 +685,29 @@ include('db.php');
 				<p class="contact-agile2">Sign Up For Our News Letters</p>
 				<form  method="post" name="sentMessage" id="contactForm" >
 					<div class="control-group form-group">
-                        
+
                             <label class="contact-p1">Full Name:</label>
                             <input type="text" class="form-control" name="name" id="name" required >
                             <p class="help-block"></p>
-                       
-                    </div>	
+
+                    </div>
                     <div class="control-group form-group">
-                        
+
                             <label class="contact-p1">Phone Number:</label>
                             <input type="tel" class="form-control" name="phone" id="phone" required >
 							<p class="help-block"></p>
-						
+
                     </div>
                     <div class="control-group form-group">
-                        
+
                             <label class="contact-p1">Email Address:</label>
                             <input type="email" class="form-control" name="email" id="email" required >
 							<p class="help-block"></p>
-						
+
                     </div>
-                    
-                    
-                    <input type="submit" name="sub" value="Send Now" class="btn btn-primary">	
+
+
+                    <input type="submit" name="sub" value="Send Now" class="btn btn-primary">
 				</form>
 				<?php
 				if(isset($_POST['sub']))
@@ -717,11 +717,11 @@ include('db.php');
 					$email = $_POST['email'];
 					$approval = "Not Allowed";
 					$sql = "INSERT INTO `contact`(`fullname`, `phoneno`, `email`,`cdate`,`approval`) VALUES ('$name','$phone','$email',now(),'$approval')" ;
-					
-					
+
+
 					if(mysqli_query($con,$sql))
 					echo"OK";
-					
+
 				}
 				?>
 			</div>
@@ -729,15 +729,15 @@ include('db.php');
 		<div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile1" data-aos="flip-right">
 			<h4>Connect With Us</h4>
 			<p class="contact-agile1"><strong>Phone :</strong>+94 (65)222-44-55</p>
-			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:name@example.com">INFO@SUNRISE.COM</a></p>
+			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:name@example.com">INFO@MUFASA.COM</a></p>
 			<p class="contact-agile1"><strong>Address :</strong> New Kalmunai Road, Batticaloa, Sri Lanka</p>
-																
+
 			<div class="social-bnr-agileits footer-icons-agileinfo">
 				<ul class="social-icons3">
 								<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
 								<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
-								<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li> 
-								
+								<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li>
+
 							</ul>
 			</div>
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3074.7905052320443!2d-77.84987248482734!3d39.586871613613056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c9f6a80ccf0661%3A0x7210426c67abc40!2sVirginia+Welcome+Center%2FSafety+Rest+Area!5e0!3m2!1sen!2sin!4v1485760915662" ></iframe>
@@ -747,7 +747,7 @@ include('db.php');
 </section>
 <!-- /contact -->
 			<div class="copy">
-		        <p>© 2017 SUNRISE . All Rights Reserved | Design by <a href="index.php">SUNRISE</a> </p>
+		        <p>© 2017 MUFASA . All Rights Reserved | Design by <a href="index.php">MUFASA</a> </p>
 		    </div>
 <!--/footer -->
 <!-- js -->
@@ -755,7 +755,7 @@ include('db.php');
 <!-- contact form -->
 <script src="js/jqBootstrapValidation.js"></script>
 
-<!-- /contact form -->	
+<!-- /contact form -->
 <!-- Calendar -->
 		<script src="js/jquery-ui.js"></script>
 		<script>
@@ -766,7 +766,7 @@ include('db.php');
 <!-- //Calendar -->
 <!-- gallery popup -->
 <link rel="stylesheet" href="css/swipebox.css">
-				<script src="js/jquery.swipebox.min.js"></script> 
+				<script src="js/jquery.swipebox.min.js"></script>
 					<script type="text/javascript">
 						jQuery(function($) {
 							$(".swipebox").swipebox();
@@ -778,7 +778,7 @@ include('db.php');
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
+		$(".scroll").click(function(event){
 			event.preventDefault();
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
@@ -816,18 +816,18 @@ include('db.php');
 							  $('.events').append("<li>after event fired.</li>");
 							}
 						  });
-					
+
 						});
 			</script>
 		<!--search-bar-->
-		<script src="js/main.js"></script>	
+		<script src="js/main.js"></script>
 <!--//search-bar-->
 <!--tabs-->
 <script src="js/easy-responsive-tabs.js"></script>
 <script>
 $(document).ready(function () {
 $('#horizontalTab').easyResponsiveTabs({
-type: 'default', //Types: default, vertical, accordion           
+type: 'default', //Types: default, vertical, accordion
 width: 'auto', //auto or any width like 600px
 fit: true,   // 100% fit in a container
 closed: 'accordion', // Start closed if in accordion view
@@ -855,13 +855,13 @@ fit: true
 			containerID: 'toTop', // fading element id
 			containerHoverID: 'toTopHover', // fading element hover id
 			scrollSpeed: 1200,
-			easingType: 'linear' 
+			easingType: 'linear'
 			};
-		*/								
+		*/
 		$().UItoTop({ easingType: 'easeOutQuart' });
 		});
 	</script>
-	
+
 	<div class="arr-w3ls">
 	<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 	</div>
@@ -869,5 +869,3 @@ fit: true
 <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
 </body>
 </html>
-
-
